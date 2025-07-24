@@ -73,3 +73,24 @@ img {
         opacity: 0;
     }
 }
+/* Tornar a largura da imagem mais flexível */
+img {
+    width: 100%;
+    max-width: 250px; /* não ultrapassa 250px */
+    height: auto;
+}
+
+/* Ajustar o padding da body para telas menores */
+@media (max-width: 600px) {
+    body {
+        padding: 20px;
+        font-size: 90%; /* texto um pouco menor */
+    }
+
+    .container {
+        padding: 15px;
+        width: 90vw; /* container quase toda a largura da tela */
+        display: block; /* para não ficar inline */
+    }
+}
+
